@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/travel"
+    android:orientation="vertical"
+    tools:context="com.gy.ticket.TravelActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/travel" />
+
+    <TextView
+        android:id="@+id/tv_travel_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/travel_tip"
+        android:textColor="#3e46f7"
+        android:textSize="23sp" />
+
+    <TableLayout
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginEnd="60dp"
+                android:id="@+id/iv_travel_airplane"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:srcCompat="@drawable/airplane" />
+
+            <ImageView
+                android:id="@+id/iv_travel_train"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:srcCompat="@drawable/train" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginEnd="60dp"
+                android:id="@+id/iv_travel_bus"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                app:srcCompat="@drawable/bus" />
+
+            <ImageView
+                android:id="@+id/iv_travel_boat"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:srcCompat="@drawable/boat" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

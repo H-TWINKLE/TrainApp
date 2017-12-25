@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/destine"
+    android:layout_height="match_parent"
+    tools:context="com.gy.ticket.DestineActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/train"/>
+
+    <TextView
+        android:id="@+id/tv_destine_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="162dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_destine_date_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/tv_destine_date"
+        android:layout_alignBottom="@+id/tv_destine_date"
+        android:layout_alignEnd="@+id/tv_destine_time"
+        android:text="@string/date_show"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_destine_date"
+        android:layout_alignStart="@+id/tv_destine_date"
+        android:layout_below="@+id/tv_destine_date"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="61dp"
+        android:textSize="20sp"
+        android:text="@string/seat" />
+
+    <TextView
+        android:id="@+id/tv_destine_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_toEndOf="@+id/textView24"
+        android:layout_toRightOf="@+id/textView24"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="00:00--24:00" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_destine_time"
+        android:layout_alignStart="@+id/tv_destine_time"
+        android:layout_alignTop="@+id/textView25"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="@string/unlimited" />
+
+    <Button
+        android:id="@+id/bt_destine_ok"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:background="#3C8DC4"
+        android:text="@string/query"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_destine_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView24"
+        android:layout_alignLeft="@+id/tv_destine_date"
+        android:layout_alignStart="@+id/tv_destine_date"
+        android:layout_marginBottom="74dp"
+        android:textSize="28sp"
+        android:textColor="#0073a8"
+        android:text="@string/chengdu" />
+
+    <TextView
+        android:id="@+id/tv_destine_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textColor="#0073a8"
+        android:text="@string/xian"
+        android:layout_alignBaseline="@+id/tv_destine_begin"
+        android:layout_alignBottom="@+id/tv_destine_begin"
+        android:layout_alignRight="@+id/tv_destine_time"
+        android:layout_alignEnd="@+id/tv_destine_time" />
+
+    <ImageView
+        android:id="@+id/iv_destine_return"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/conversion"
+        android:layout_alignBottom="@+id/tv_destine_end"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

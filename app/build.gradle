@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 25
+
+    defaultConfig {
+        applicationId "com.gy.ticket"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+MobSDK {
+    appKey "2331a7af64630"
+    appSecret "b0ad152d2d6841f0367b8ae744d1604c"
+
+    SMSSDK {}
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'org.xutils:xutils:3.5.0'
+    implementation 'org.jsoup:jsoup:1.10.3'
+    implementation 'com.alibaba:fastjson:1.2.39'
+    implementation files('libs/android-smart-image-view-1.0.0.jar')
+    implementation 'com.android.support:design:25.4.0'
+    compile 'id.zelory:compressor:2.1.0'
+}

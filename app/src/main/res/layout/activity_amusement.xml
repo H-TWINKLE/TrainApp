@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/amuse"
+    android:layout_height="match_parent"
+    tools:context="com.gy.ticket.AmusementActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/amusement">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_amusement_amusement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="77dp"
+        android:text="@string/amusement_all"
+        android:textColor="#3e46f7"
+        android:textSize="23sp" />
+
+    <ImageView
+        android:id="@+id/iv_amusement_movie"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/movie"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/tv_amusement_amusement"
+        android:layout_alignLeft="@+id/tv_amusement_amusement"
+        android:layout_alignStart="@+id/tv_amusement_amusement" />
+
+    <TextView
+        android:id="@+id/tv_amusement_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:textColor="#0073a8"
+        android:text="@string/movie"
+        android:layout_below="@+id/iv_amusement_movie"
+        android:layout_alignRight="@+id/iv_amusement_movie"
+        android:layout_alignEnd="@+id/iv_amusement_movie"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <ImageView
+        android:id="@+id/iv_amusement_drama"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/drama"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@+id/iv_amusement_movie"
+        android:layout_toRightOf="@+id/iv_amusement_movie"
+        android:layout_toEndOf="@+id/iv_amusement_movie" />
+
+    <TextView
+        android:id="@+id/tv_amusement_drama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/iv_amusement_drama"
+        android:layout_alignRight="@+id/iv_amusement_drama"
+        android:layout_alignTop="@+id/tv_amusement_movie"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:textColor="#0073a8"
+        android:text="@string/drama" />
+
+    <ImageView
+        android:id="@+id/iv_amusement_sight"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/sight"
+        android:layout_alignTop="@+id/iv_amusement_drama"
+        android:layout_toRightOf="@+id/iv_amusement_drama"
+        android:layout_toEndOf="@+id/iv_amusement_drama"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:id="@+id/tv_amusement_sight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#0073a8"
+        android:text="@string/sight"
+        android:layout_alignBaseline="@+id/tv_amusement_drama"
+        android:layout_alignBottom="@+id/tv_amusement_drama"
+        android:layout_alignRight="@+id/iv_amusement_sight"
+        android:layout_alignEnd="@+id/iv_amusement_sight" />
+
+    <ImageView
+        android:id="@+id/iv_amusement_park"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="42dp"
+        app:srcCompat="@drawable/park"
+        android:layout_below="@+id/tv_amusement_movie"
+        android:layout_alignLeft="@+id/iv_amusement_movie"
+        android:layout_alignStart="@+id/iv_amusement_movie" />
+
+    <TextView
+        android:id="@+id/tv_amusement_park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/park"
+        android:layout_below="@+id/iv_amusement_park"
+        android:textSize="20sp"
+        android:textColor="#0073a8"
+        android:layout_alignLeft="@+id/tv_amusement_movie"
+        android:layout_alignStart="@+id/tv_amusement_movie" />
+
+    <ImageView
+        android:id="@+id/iv_amusement_zoo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/zoo"
+        android:layout_alignTop="@+id/iv_amusement_park"
+        android:layout_alignLeft="@+id/iv_amusement_drama"
+        android:layout_alignStart="@+id/iv_amusement_drama" />
+
+    <TextView
+        android:id="@+id/tv_amusement_zoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#0073a8"
+        android:text="@string/zoo"
+        android:layout_alignBaseline="@+id/tv_amusement_park"
+        android:layout_alignBottom="@+id/tv_amusement_park"
+        android:layout_alignLeft="@+id/tv_amusement_drama"
+        android:layout_alignStart="@+id/tv_amusement_drama" />
+
+    <ImageView
+        android:id="@+id/iv_amusement_aquarium"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/aquarium"
+        android:layout_alignTop="@+id/iv_amusement_zoo"
+        android:layout_alignLeft="@+id/tv_amusement_sight"
+        android:layout_alignStart="@+id/tv_amusement_sight" />
+
+    <TextView
+        android:id="@+id/tv_amusement_aquarium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_amusement_sight"
+        android:layout_alignRight="@+id/tv_amusement_sight"
+        android:layout_alignTop="@+id/tv_amusement_zoo"
+        android:textSize="20sp"
+        android:textColor="#0073a8"
+        android:text="@string/aquarium" />
+</RelativeLayout>
