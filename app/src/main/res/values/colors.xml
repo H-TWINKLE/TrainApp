@@ -5,4 +5,8 @@
     <color name="colorAccent">#299ade</color>
     <color name="colorBlack">#e8283032</color>
     <color name="colorTranspant">#faffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="trans">#b7e8ede7</color>
+    <color name="whilte">#ffffff</color>
 </resources>

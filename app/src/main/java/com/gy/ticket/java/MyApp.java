@@ -10,7 +10,7 @@ import org.xutils.x;
  * Created by TWINKLE on 2017/12/19.
  */
 
-public class MyApp  extends Application{
+public class MyApp extends Application {
 
     @Override
     public void onCreate() {

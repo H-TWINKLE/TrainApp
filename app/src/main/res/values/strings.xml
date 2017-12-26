@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ticket</string>
+    <string name="app_name">乐行</string>
     <string name="login">登录</string>
     <string name="register">新用户注册</string>
     <string name="password">密码</string>
@@ -34,7 +34,7 @@
     <string name="email_check">激活邮箱</string>
     <string name="email_check_send">验证信息发送成功</string>
     <string name="code_tip">验证码</string>
-
+    <string name="times">跳过 \t\t\t\t %1$d秒</string>
 
     <string name="account_tip">请输入用户名</string>
     <string name="password_tip">请输入密码</string>
@@ -61,7 +61,7 @@
 
     <string name="internet_error">网络异常</string>
     <string name="amusement_all">娱乐创造生活</string>
-    <string name="function">办公</string>
+    <string name="function">动态</string>
     <string name="info">个人信息</string>
     <string name="register_title">注册</string>
     <string name="travel_tip">乘兴而行,兴至而归</string>
@@ -73,5 +73,9 @@
 
     <string name="login_out">注销</string>
     <string name="warn_input">请填写此字段</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

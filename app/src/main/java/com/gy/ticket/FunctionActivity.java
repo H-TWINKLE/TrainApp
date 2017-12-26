@@ -39,7 +39,7 @@ public class FunctionActivity extends Fragment {
 
     private void init() {
         lv_function = (ListView) view.findViewById(R.id.lv_function);
-        iv_function_account = (ImageView)view.findViewById(R.id.iv_function_account);
+        iv_function_account = (ImageView) view.findViewById(R.id.iv_function_account);
         iv_function_account.setOnClickListener(new Click());
     }
 
@@ -67,12 +67,15 @@ public class FunctionActivity extends Fragment {
 
     }
 
-    private class Click implements View.OnClickListener{
+    private class Click implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            switch (v.getId()){
-                case R.id.iv_function_account : startActivity(new Intent(getActivity(),InformationActivity.class));break;
-                default: break;
+            switch (v.getId()) {
+                case R.id.iv_function_account:
+                    startActivity(new Intent(getActivity(), InformationActivity.class));
+                    break;
+                default:
+                    break;
             }
         }
     }

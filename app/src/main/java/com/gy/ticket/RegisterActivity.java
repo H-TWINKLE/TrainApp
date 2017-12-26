@@ -180,7 +180,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         } else {
             if (flag_code == 1) {
                 register(name, pass, idcard, tel, email);
-            }else {
+            } else {
                 toast(getString(R.string.plaese_check_tel));
             }
 
@@ -294,10 +294,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 }
             } else {//错误等在这里（包括验证失败）
                 ((Throwable) data).printStackTrace();
-                try{
-                   // data = "["+data.toString()+"]";
-                    toast(JSONObject.parseObject(data.toString().replace("java.lang.Throwable: ","")).get("detail").toString());
-                }catch (Exception e){
+                try {
+                    // data = "["+data.toString()+"]";
+                    toast(JSONObject.parseObject(data.toString().replace("java.lang.Throwable: ", "")).get("detail").toString());
+                } catch (Exception e) {
                     e.printStackTrace();
                     toast(getString(R.string.internet_error));
                 }
