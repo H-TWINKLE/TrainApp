@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">易用</string>
+
+
+    <string name="title_activity_main">易用</string>
+
+    <string name="navigation_drawer_open">打开侧菜单</string>
+    <string name="navigation_drawer_close">关闭侧菜单</string>
+
+
+    <string name="title_activity_login">登录</string>
+    <string name="please_login">请登录</string>
+
+    <string name="map">地图</string>
+    <string name="learn">学习</string>
+    <string name="live">生活</string>
+    <string name="setting">设置</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">请输入邮箱</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登录/注册</string>
+    <string name="action_sign_in_short">登录/注册</string>
+    <string name="finish">返回</string>
+    <string name="forget_pass">忘记密码</string>
+    <string name="error_invalid_email">请正确填写邮箱</string>
+    <string name="error_invalid_password">密码最低6位</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">请填写</string>
+    <string name="permission_rationale">通讯异常</string>
+    <string name="attempt_to_login">正在登录</string>
+
+    <string name="dummy_button">跳过</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="time">跳过 \t\t\t\t %1$d秒</string>
+
+
+
+    <string name="title_activity_forgetpass">忘记密码</string>
+    <string name="prompt_code">请输入验证码</string>
+    <string name="send_code">发送验证码</string>
+    <string name="ok_code">验证验证码</string>
+    <string name="upgrade_src">修改密码</string>
+    <string name="ok">确认</string>
+    <string name="sending_code">正在发送验证码</string>
+    <string name="return_main">回到主页</string>
+    <string name="old_scr">请输入新密码</string>
+    <string name="new_scr">请确认输入新密码</string>
+    <string name="ok_src">确认修改新密码</string>
+    <string name="renew_new">两次密码输入不同</string>
+    <string name="check_src">正在验证</string>
+
+
+    <string name="title_activity_info">个人资料</string>
+
+    <string name="upgrade">修改</string>
+    <string name="login_out">注销</string>
+
+
+    <string name="choose_sex">请选择性别</string>
+    <string name="choose_age">请选择年龄</string>
+
+    <string name="no_admin">该用户尚未注册</string>
+    <string name="code_isfalse">验证码不正确</string>
+    <string name="new_pass_is_right">密码修改成功</string>
+    <string name="new_pass_is_flase">密码修改失败</string>
+
+    <string name="confirm_to_quit">再次点击退出程序</string>
+    <string name="info_is_right">信息修改成功</string>
+    <string name="info_upgradeing">信息正在修改</string>
+
+    <string name="please_to_write_info">请填写信息</string>
+
+    <string name="tool">小工具</string>
+    <string name="Turing">智能小华</string>
+    <string name="welcome">嗨，最近想我没有？[羞涩]</string>
+    <string name="first_message">你好，我就是高中时期那个随时随地给外国人写信的靓仔李华，初次见面，请多关照！</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="version">version：5.10</string>
+    <string name="pref_header_general">关于</string>
+    <string name="title_activity_live">生活吐槽</string>
+    <string name="send_info_ok">信息发送成功</string>
+    <string name="send_info_false">信息发送失败 目前暂时只支持发送文字信息喔</string>
+
+    <string name="my_live">我的吐槽</string>
+
+    <string name="main_study">学习板块</string>
+    <string name="text_notice">X 门课程有待提交作业</string>
+    <string name="study_notice">资讯</string>
+
+
+    <string name="jwgl_stu_info">个人信息</string>
+    <string name="jwgl_stu_score">个人成绩</string>
+    <string name="jwgl_stu_ttb">个人课表</string>
+    <string name="jwgl_stu_exam">考试信息</string>
+
+
+    <string name="tvw_study_stu_info_notice"> ···下拉刷新··· </string>
+    <string name="login">登录</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="jwgl_id">学号</string>
+    <string name="jwgl_pass">教务管理系统密码</string>
+    <string name="title_activity_jwgl__exam">Jwgl_ExamActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_jwgl__score">Jwgl_ScoreActivity</string>
+
+    <string name="conn_me">Made By Twinkle </string>
+
+    <string name="title_movie">每日电影</string>
+    <string name="rvw_title">名字</string>
+    <string name="rvw_info">相关信息值得一看</string>
+    <string name="load">正在加载···</string>
+    <string name="tag">类型</string>
+    <string name="register">注册</string>
+    <string name="name">请输入昵称</string>
+    <string name="please_input_pass">请输入密码</string>
+    <string name="please_input_pass2">请再次输入密码</string>
+    <string name="register_right">注册成功</string>
+    <string name="register_2">该用户已经注册，请重新填写</string>
+
+    <string name="main_n_title">名字</string>
+    <string name="main_n_name">作者</string>
+    <string name="main_n_article">文章</string>
+
+    <string name="pref_title_add_friends_to_messages">字体大小</string>
+    <string-array name="pref_example_list_titles">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>15</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">同步</string>
+
+    <string name="pref_title_sync_frequency">同步频率</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>10 s</item>
+        <item>30 s</item>
+        <item>60 s</item>
+        <item>90 s</item>
+        <item>200 s</item>
+        <item>不同步</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>200</item>
+        <item>-1</item>
+    </string-array>
+
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">系统同步设置</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">提醒</string>
+
+    <string name="pref_title_new_message_notifications">新消息提醒</string>
+
+    <string name="pref_title_ringtone">铃声</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">振动</string>
+
+    <string name="read">阅读设置</string>
+
+
+
+
+
+</resources>

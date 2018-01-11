@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_background"
+    android:orientation="vertical">
+
+
+    <com.yalantis.jellytoolbar.widget.JellyToolbar
+        android:id="@+id/tbr_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvw_menu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivw_menu_level"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="@string/title_activity_main"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/ivw_menu_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tvw_menu_name"
+                app:srcCompat="@drawable/level0" />
+
+        </RelativeLayout>
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/ivw_menu_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="34dp"
+            android:adjustViewBounds="false"
+            app:srcCompat="@drawable/pic" />
+
+
+
+
+    </com.yalantis.jellytoolbar.widget.JellyToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_menu_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvw_menu_say"
+                android:gravity="center"
+                android:textColor="@color/whilte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/please_login" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvw_menu_map"
+            style="@style/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/map"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvw_menu_learn"
+            style="@style/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/learn" />
+
+        <TextView
+            android:id="@+id/tvw_menu_live"
+            style="@style/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/live" />
+
+        <TextView
+            android:id="@+id/tvw_menu_tool"
+            style="@style/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tool" />
+
+        <TextView
+            android:id="@+id/tvw_menu_setting"
+            style="@style/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <include
+                layout="@layout/layout_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

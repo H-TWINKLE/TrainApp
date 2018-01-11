@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f90b5</color>
+    <color name="colorPrimaryDark">#4a9dc2</color>
+    <color name="colorAccent">#EB6460</color>
+
+    <color name="colorwhilte">#c9c6c6</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="saffron">#f1b136</color>
+    <color name="eggplant">#03a679</color>
+    <color name="sienna">#EB6460</color>
+
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorStart">#cb5ed9</color>
+    <color name="colorEnd">#8463d4</color>
+    <color name="menu_background">#444153</color>
+    <color name="whilte">#ffffff</color>
+
+    <color name="indicator_1">#55b3c2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+
+    <color name="colorBlack">#100e0e</color>
+
+    <color name="trans">#b7e8ede7</color>
+
+
+</resources>

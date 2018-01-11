@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.twinkle.train.StudyActivity"
+    android:id="@+id/view_study"
+    android:orientation="vertical">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/main_study"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/ivw_study_login"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="end|center"
+            app:srcCompat="@drawable/login" />
+
+        <ImageView
+            android:id="@+id/ivw_study_fsh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="11dp"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="10dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:text="@string/study_notice"
+            android:textColor="#000" />
+
+
+        <TextView
+            android:id="@+id/tvw_study_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="22dp"
+            android:text="@string/load"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="#932323"
+            android:textSize="18sp" />
+
+
+        <com.yalantis.phoenix.PullToRefreshView
+            android:id="@+id/ptr_study"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="78dp">
+
+            <ListView
+                android:id="@+id/lvw_study_notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="90dp" />
+        </com.yalantis.phoenix.PullToRefreshView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/bmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:bmb_buttonEnum="ham"
+            app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
+            app:bmb_normalColor="@color/saffron"
+            app:bmb_piecePlaceEnum="piecePlace_ham_4" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

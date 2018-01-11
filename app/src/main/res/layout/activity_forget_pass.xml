@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context="com.twinkle.train.ForgetPassActivity">
+
+    <LinearLayout
+
+        android:id="@+id/llt_fps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/acvw_fps_email"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+
+            android:singleLine="true" />
+
+        <AutoCompleteTextView
+            android:id="@+id/acvw_fps_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+
+            android:hint="@string/prompt_code"
+            android:maxLines="1"
+
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_fps_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/send_code" />
+
+        <TextView
+            android:id="@+id/tvw_fps_retunmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="30dp"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:text="@string/return_main" />
+    </LinearLayout>
+
+</LinearLayout>

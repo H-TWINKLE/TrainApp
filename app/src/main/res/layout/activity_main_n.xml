@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_n"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MainNActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.yalantis.jellytoolbar.widget.JellyToolbar
+            android:id="@+id/jbr_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:cancelIcon="@android:drawable/ic_menu_close_clear_cancel"
+            app:endColor="@color/colorPrimaryDark"
+            app:icon="?android:attr/actionModeWebSearchDrawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:startColor="@color/colorPrimary"
+            app:titleTextColor="@android:color/white">
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/ivw_main_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="34dp"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/pic" />
+
+            <TextView
+                android:id="@+id/tvw_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/title_activity_main"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+        </com.yalantis.jellytoolbar.widget.JellyToolbar>
+
+        <include
+            layout="@layout/content_main_n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+
